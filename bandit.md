@@ -66,4 +66,6 @@ Source Set: A-Za-z
 Target Set: N-ZA-Mn-za-m 
 (it is 13 positions from A to M)
 
+**Main objective: get familiar with using different unix command lines
+
 
