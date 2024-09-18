@@ -41,4 +41,15 @@ Level 9 -> level 10: strings data.txt | grep '='
 password: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
 strings command extracts readable text from data.txt
 
+Level 10 -> level 11: base64 -d data.txt
+password: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+base64 command used to decode the data 
+
+Level 11 -> level 12: tr 'A-Za-z' 'N-ZA-Mn-za-m' < data.txt
+password: 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+tr command translates characters based on two sets of characters provided. For ROT13:
+Source Set: A-Za-z
+Target Set: N-ZA-Mn-za-m 
+(it is 13 positions from A to M)
+
 
