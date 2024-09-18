@@ -15,7 +15,7 @@ Level 3 -> level 4: cd inhere then ls -a then cat "...Hiding-From-You"
 password: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
 -a shows all directory contents (including hidden ones)
 
-Level 4 -> level 5: cd inhere then file -- -file0x (for each present file) then cat -- file07 (file type ASCII text which is human readable)
+Level 4 -> level 5: cd inhere then file ./* then cat -- file07 (file type ASCII text which is human readable)
 password: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
 file shows the file type and -- used to indicate end of command option so the file name is properly handled by shell
 
