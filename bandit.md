@@ -32,3 +32,13 @@ password: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
 Level 7 -> level 8: grep "millionth" data.txt
 passowrd: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 grep command used to locate lines containing the word "millionth"
+
+Level 8 -> level 9: sort data.txt | uniq -u
+password: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+uniq -u finds lines that only occur exactly once
+
+Level 9 -> level 10: strings data.txt | grep '='
+password: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+strings command extracts readable text from data.txt
+
+
