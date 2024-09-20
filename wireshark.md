@@ -1,3 +1,9 @@
+***Lucky Beulla Muhoza***
+
+***CS 338***
+
+***Prof. Jeff Ondich***
+
 ## Getting started with Wireshark ##
 **DAYTIME** 
 
@@ -27,3 +33,11 @@
 7. Which entity (the nc client or the daytime server) initiated the closing of the TCP connection? How can you tell?
 * <img width="1171" alt="Screenshot 2024-09-19 at 9 28 45 PM" src="https://github.com/user-attachments/assets/75b6d52a-e3a0-43a4-a089-5d0d284f9454">
   The NIST time server client initiated the closing TCP connection [FIN]. In frame 5, the connection is going out from port 13 to 46430 (or the nc IP address to the NIST time IP address).
+
+
+**HTTP**
+
+1. How many TCP connections were opened? How can you tell?
+2. Can you tell where my homepage (index.html) was requested? (If not, why not? If so, include frame summaries and/or other info that supports your answer.)
+3. Can you tell where my photograph (jeff-square-colorado.jpg) was requested? (If not, why not? If so, include frame summaries and/or other info that supports your answer.)
+
