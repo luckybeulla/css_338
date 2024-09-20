@@ -38,6 +38,21 @@
 **HTTP**
 
 1. How many TCP connections were opened? How can you tell?
+
+   * 3 different connections were opened. One sending an http request to get the text content of the page, the other two connections each for the images on the page.
+   * I can tell these 3 TCP connections were opened since there are 3 different ports from kali outgoing to port 80 (where Jeff's site is hosted).
+       
 2. Can you tell where my homepage (index.html) was requested? (If not, why not? If so, include frame summaries and/or other info that supports your answer.)
-3. Can you tell where my photograph (jeff-square-colorado.jpg) was requested? (If not, why not? If so, include frame summaries and/or other info that supports your answer.)
+
+   ***Yes. A TCP connection on port (55322) outgoing to port 8 was established requesting the HTTP and received html text in return.***
+<img width="1189" alt="Screenshot 2024-09-20 at 4 04 51 PM" src="https://github.com/user-attachments/assets/1e7212cc-512e-4fe4-a48d-70e7ef0e8168">
+
+<img width="1399" alt="Screenshot 2024-09-20 at 4 06 47 PM" src="https://github.com/user-attachments/assets/ba2b2689-44e2-4131-932d-dd792fc0bb01">
+
+4. Can you tell where my photograph (jeff-square-colorado.jpg) was requested? (If not, why not? If so, include frame summaries and/or other info that supports your answer.)
+
+   ***Yes jeff-square-colorado.jpg was opened since after the initial TCP connection received the HTTP text, the same port(55322) was used to request the image to port 80 and received several packets in return containing bytes of the image.***
+
+   <img width="1100" alt="Screenshot 2024-09-20 at 3 51 50 PM" src="https://github.com/user-attachments/assets/8e4f33c0-bc47-4c49-9015-05f0fb73970c">
+
 
