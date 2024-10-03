@@ -31,9 +31,14 @@ Here is my decoded public key:
 
 **----Sanity Check----**
 
-***Private key***
+- [X] e (public exponent) * d (private exponent) (mod λ(n)) == 1
+      
+      * λ(n) = lcm (p-1, q-1)
+      * n (modulus) = p (prime1) * q (prime2)
+<img width="969" alt="Screenshot 2024-10-02 at 9 04 10 PM" src="https://github.com/user-attachments/assets/aeb96a88-b4db-4a5e-b10a-1fa5ac0b550f">
 
-* prime1 (p) * prime2 (q) = Modulus integer (n)
+Hence, the integers generate in both the private and public key files pass the sanity check.
+
 
 
 
