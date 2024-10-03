@@ -23,15 +23,17 @@ Refering to the [Appendix 1.1 of RFC 8017](https://datatracker.ietf.org/doc/html
 
 <img width="681" alt="Screenshot 2024-10-02 at 7 11 30 PM" src="https://github.com/user-attachments/assets/0f241211-8bf1-4802-b5b8-61aba5968d29">
 
-By decoding the contents of my generated public key, I used the **ssh-keygen -f id_rsa_homework.pub -e -m pem > id_rsa_homework.pub.pem** commandline to convert the my public key from OpenSSH to the more generic PKCS#1 PEM file format. I then copy and pasted the contents of id_rsa_homework.pub.pem into the [Michael Holtstrom decoder](http://ldh.org/asn1.html). 
+By decoding the contents of my generated public key, I used the **ssh-keygen -f id_rsa_homework.pub -e -m pem > id_rsa_homework.pub.pem** commandline to convert the my public key from OpenSSH to the more generic PKCS#1 PEM file format. I then copy and pasted the contents of id_rsa_homework.pub.pem into the [Lapo Luchini ASN1 decoder](https://lapo.it/asn1js/). 
 
 Here is my decoded public key: 
 
-<img width="1049" alt="Screenshot 2024-10-02 at 7 33 16 PM" src="https://github.com/user-attachments/assets/7d9a6f10-e32b-4f6e-88c3-8d5782c72450">
-
-Where, the modulus is the first U.P Integer and the second integer is the exponent (65537 decimal). 
+<img width="1009" alt="Screenshot 2024-10-02 at 8 19 50 PM" src="https://github.com/user-attachments/assets/37e1ad0e-f629-4b27-af6d-b7318190d59f">
 
 **----Sanity Check----**
+
+***Private key***
+
+* prime1 (p) * prime2 (q) = Modulus integer (n)
 
 
 
