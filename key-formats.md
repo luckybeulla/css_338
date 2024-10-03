@@ -29,7 +29,7 @@ Here is my decoded public key:
 
 <img width="1009" alt="Screenshot 2024-10-02 at 8 19 50 PM" src="https://github.com/user-attachments/assets/37e1ad0e-f629-4b27-af6d-b7318190d59f">
 
-**----Sanity Check----**
+**----SANITY CHECK----**
 
 - [X] e (public exponent) * d (private exponent) (mod λ(n)) == 1
       
