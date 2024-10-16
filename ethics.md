@@ -34,4 +34,28 @@ Not only was this ethically alarming, but it also potentially undermined the CTO
 
 * CEO: Right to make decisions in the best interest of the company and explore new revenue-generating strategies
 
+**Missing information**
+
+* I need clarification on whether data retention in archived logs is intentional or a byproduct of bugs (or if the clueless fellow was not credible). Knowing this would help determine whether data privacy has been inadvertently compromised from the start.
+
+*  I would like more insight into the specific legal regulations that Beerz is subject to regarding data retention and user consent.
+
+**Possible actions and consequences**
+
+* Advocate for data scrubbing: This approach aligns with the CTO’s vision and maintains user trust, but it may conflict with the CEO’s goals to generate additional revenue for the company and potentially strain my relationship with management.
+
+* Submit my resignation to Beerz: This would be a valid approach since the company is violating the privacy commitment that led me to desire working for them. However, this would be a coward approach since neither would I be helping enhance customers' privacy nor would I have a job :(
+
+**Relevant ACM Code of Ethics and Professional Conduct**
+
+* ***Section 1.1 - Be honest and trustworthy***: The CEO’s suggestion to generate revenue from customers' location data conflicts with the CTO’s promise to avoid surveillance capitalism. Transparency with users about data practices is very important.
+* ***Section 1.6 - Respect privacy***:  Customers' information should only be used for legitimate purposes, with protection against unauthorized access. Holding onto location data for potential resale violates this code and could lead to re-identification risks.
+* ***Section 2.2 - Maintain high standards of professional competence, conduct and ethical practice***:
+As an employee who presented the new features, I am bound by this code, which could be compromised if I comply with the CEO’s proposal.
+* ***Section 3.1 - Ensure that the public good is the central concern during all professional computing work***: This section suggests that the CEO’s approach to monetizing data without clear user consent would be unethical, as it prioritizes profit over users' data privacy.
+
+  ****
+
+
+
 
