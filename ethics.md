@@ -18,8 +18,7 @@ Not only was this ethically alarming, but it also potentially undermined the CTO
 
 **Main ethical questions**
 
-* Should I proceed with implementing the Beerz 2.0 features I suggested under the CEO's request to delay data scrubbing,
-  even if it conflicts with the ethical foundation that initially attracted me to Beerz?
+* Should I proceed with implementing the Beerz 2.0 features I suggested under the CEO's request to delay data scrubbing, even if it conflicts with the ethical foundation that initially attracted me to Beerz?
 
 * How should I address the potential users' privacy risks, given that user location data may have been retained in the logs all along?
 
@@ -27,8 +26,7 @@ Not only was this ethically alarming, but it also potentially undermined the CTO
 
 * Customers: Right to privacy of their personal data, especially  given that Beerz initially committed to discarding their location data promptly.
 
-* Employees/developing team (including me):  Right to work under ethical conditions and be informed if there are changes in the company's principles from those originally
-  presented to us.
+* Employees/developing team (including me):  Right to work under ethical conditions and be informed if there are changes in the company's principles from those originally presented to us.
 
 * CTO: Right to uphold the vision she promoted, which includes her pitch on data privacy.
 
@@ -54,7 +52,15 @@ Not only was this ethically alarming, but it also potentially undermined the CTO
 As an employee who presented the new features, I am bound by this code, which could be compromised if I comply with the CEO’s proposal.
 * ***Section 3.1 - Ensure that the public good is the central concern during all professional computing work***: This section suggests that the CEO’s approach to monetizing data without clear user consent would be unethical, as it prioritizes profit over users' data privacy.
 
-  ****
+**Recommended action**
+
+Based on my analysis, my recommended action is to engage the CTO in a discussion about the CEO’s proposal, as she aligns with my ethical concerns. I would advocate for reinforcing the data scrubbing policy as initially promised, emphasizing that this approach maintains user trust and aligns with the company’s original vision. 
+
+The ACM Code of Ethics supports a commitment to privacy and trustworthiness, reinforcing that our primary responsibility is to our customers and their rights. If the company decides to prioritize profit over ethics, I would consider seeking employment elsewhere, as I value companies that respect user privacy and adhere to ethical standards. 
+
+
+This report underscores that ethical computing practices should not be compromised, even in pursuit of revenue, especially when they could harm the very users we aim to serve.
+
 
 
 
