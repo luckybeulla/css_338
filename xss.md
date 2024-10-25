@@ -22,20 +22,26 @@
 
     ***Using burpsuite, the HTTP request to cs338:jeffondich.com contains a Cookie header with its value theme set to default. The resulting HTTP response has a Set-Cookie header containing the theme as default, and experies with a data. When I change the theme of Jeff's site to be red, a new GET request is sent with theme set to red: GET /fdf/?theme=red HTTP 1.1. The Set-Cookie header in the response then has the theme value as red with the same expiration date. These changes in the cookie value are similar to those observed through the inspectpor tool***
 
-4. Relaunching the browser and going back to FDF.
+   * Note: The very first HTTP GET request that was sent to cs338:jeffondich.com did not contain a Cookie header and the resulting response had a Set-Cookie header with the theme value. The other following GET requests to the site had a Cookie header.
 
-5. 
-6. 
+5. Relaunching the browser and going back to FDF.
 
+   ***The theme to the FDF site stayed the same when I closed my Chrome browser and relaunched it. That is, I change the site from the default theme to blue and close it. When I relaunched the site, the theme was still blue***
 
-Quit your browser, relaunch it, and go back to the FDF. Is your red or blue theme (wherever you last left it) still selected?
+6. How the current theme transmitted between the browser and the FDF server.
 
-How is the current theme transmitted between the browser and the FDF server?
+    ***When I visited the FDF site, my browser stored a cookie, in this case theme with its value. Thus when I refresh or relaunch the page, my browser automatically sends this theme cookie along with the request. The server then reads the cookie containing current value of my theme and responds with the appropriate version of the site***
+   
+6. How changing the theme is transmitted between the browser and the FDF server?
 
-When you change the theme, how is the change transmitted between the browser and the FDF server?
+    ***Changing the theme updates the value of my local cookie and thus when my browser makes a new request to the server, the new value of the cookie is automatically sent as part of the HTTP request headers***
 
-How could you use your browser's Inspector to change the FDF theme without using the FDF's Theme menu?
+7. Using browser's inspector to change FDF theme
+   
+    ***Using the Inspector, in the applications tab, I was able to edit the value of the theme cookie by typing in a different theme option. When I refreshed the page, the FDF theme updated to the new set value***
 
-How could you use Burpsuite's Proxy tool to change the FDF theme without using the FDF's Theme menu?
+8. Using Burpsuite's Proxy tool to change the FDF theme.
+
+    ******
 
 Where does your OS (the OS where you're running your browser and Burpsuite, that is) store cookies? (This will require some internet searching, most likely.)
