@@ -42,6 +42,11 @@
 
 8. Using Burpsuite's Proxy tool to change the FDF theme.
 
-    ******
+    ***By modifying the cookie header value of the intercepted request to the FDF server, I was able to get a response with the updated theme on the FDF site without using the theme menu***
 
-Where does your OS (the OS where you're running your browser and Burpsuite, that is) store cookies? (This will require some internet searching, most likely.)
+9. Where my OS stores cookies.
+
+    ***Each browser manages the directory and format in which its cookies are stored on my computer's hard drive***
+     * For example the cookies from Google Chrome on my macOs are stored in the subdirectory ~/Library/Application Support/Google/Chrome/Default/Cookies
+  
+     ****** 
