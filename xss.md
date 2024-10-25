@@ -22,7 +22,7 @@
 
     ***Using burpsuite, the HTTP request to cs338:jeffondich.com contains a Cookie header with its value theme set to default. The resulting HTTP response has a Set-Cookie header containing the theme as default, and experies with a data. When I change the theme of Jeff's site to be red, a new GET request is sent with theme set to red: GET /fdf/?theme=red HTTP 1.1. The Set-Cookie header in the response then has the theme value as red with the same expiration date. These changes in the cookie value are similar to those observed through the inspectpor tool***
 
-   * Note: The very first HTTP GET request that was sent to cs338:jeffondich.com did not contain a Cookie header and the resulting response had a Set-Cookie header with the theme value. The other following GET requests to the site had a Cookie header.
+   * Note: The very first HTTP GET request that was sent to cs338:jeffondich.com did not contain a Cookie header and the resulting response had a Set-Cookie header with the theme value. The subsequent GET requests to the site then had a Cookie header.
 
 5. Relaunching the browser and going back to FDF.
 
