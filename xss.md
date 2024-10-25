@@ -49,4 +49,18 @@
     ***Each browser manages the directory and format in which its cookies are stored on my computer's hard drive***
      * For example the cookies from Google Chrome on my macOs are stored in the subdirectory ~/Library/Application Support/Google/Chrome/Default/Cookies
   
-     ****** 
+     ******
+
+### Part 2: Cross-Site Scripting (XSS) ###
+
+Questions:
+
+Provide a diagram and/or a step-by-step description of the nature and timing of Moriarty's attack on users of the FDF. Note that some of the relevant actions may happen long before other actions.
+
+Describe an XSS attack that is more virulent than Moriarty's "turn something red" and "pop up a message" attacks. Think about what kinds of things the Javascript might have access to via Alice's browser when Alice views the attacker's post.
+
+Do it again: describe a second attack that is more virulent than Moriarty's, but that's substantially different from your first idea.
+
+What techniques can the server or the browser use to prevent what Moriarty is doing?
+
+
