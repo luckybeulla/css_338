@@ -10,13 +10,19 @@
 
 1. Initial cookies for cs338.jeffondich.com - their names and values
 
-   ***Yes, there is a cookie for the domain http://cs338.jeffondich.com/fdf/***
+   ***Yes, there is a cookie for the domain cs338.jeffondich.com/fdf/***
    * name: theme, value: default
 
-3. Do cookies change with the theme?
-4. 
+2. Do cookies change with the theme?
 
-Using the "Theme" menu on the FDF page, change your theme to red or blue. Look at your cookies for cs338.jeffondich.com again. Did they change?
+  ***The value of the present cookie changes with the theme. For example, when I changed the theme to blue, the value associated with the theme cookie changed from default to blue***
+
+3. 
+
+4. 
+5. 
+
+
 
 Do the previous two steps (examining cookies and changing the theme) using Burpsuite. What "Cookie:" and "Set-Cookie:" HTTP headers do you see? Do you see the same cookie values as you did with the Inspector?
 
