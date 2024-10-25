@@ -15,16 +15,18 @@
 
 2. Do cookies change with the theme?
 
-  ***The value of the present cookie changes with the theme. For example, when I changed the theme to blue, the value associated with the theme cookie changed from default to blue***
+    ***The value of the present cookie changes with the theme.***
+   * For example: when I changed the theme to blue, the value associated with the theme cookie changed from default to blue
+     
+3. Step 1 and 2 using Burpsuite
 
-3. 
+    ***Using burpsuite, the HTTP request to cs338:jeffondich.com contains a Cookie header with its value theme set to default. The resulting HTTP response has a Set-Cookie header containing the theme as default, and experies with a data. When I change the theme of Jeff's site to be red, a new GET request is sent with theme set to red: GET /fdf/?theme=red HTTP 1.1. The Set-Cookie header in the response then has the theme value as red with the same expiration date. These changes in the cookie value are similar to those observed through the inspectpor tool***
 
-4. 
+4. Relaunching the browser and going back to FDF.
+
 5. 
+6. 
 
-
-
-Do the previous two steps (examining cookies and changing the theme) using Burpsuite. What "Cookie:" and "Set-Cookie:" HTTP headers do you see? Do you see the same cookie values as you did with the Inspector?
 
 Quit your browser, relaunch it, and go back to the FDF. Is your red or blue theme (wherever you last left it) still selected?
 
