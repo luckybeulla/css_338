@@ -109,5 +109,6 @@ e. Go back and look at your nc -l -p terminal on your host OS (attacking machine
 
 f. What are all those % codes in the URL you used?
 
+> *The % codes in the URL are URL-encoded representations of special characters. This is necessary because URLs cannot include certain characters directly; instead, they must be represented in a format that can be safely transmitted over the internet. Using [this documentation](https://www.w3schools.com/tags/ref_urlencode.ASP) as reference, for example: %20 represents a space and %22 represents a double quote "" and %26 represents an ampersand &.*
 
 g. Write a brief description, probably including a diagram, explaining how this reverse shell is functioning.
