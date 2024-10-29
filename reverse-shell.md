@@ -112,3 +112,13 @@ f. What are all those % codes in the URL you used?
 > *The % codes in the URL are URL-encoded representations of special characters. This is necessary because URLs cannot include certain characters directly; instead, they must be represented in a format that can be safely transmitted over the internet. Using [this documentation](https://www.w3schools.com/tags/ref_urlencode.ASP) as reference, for example: %20 represents a space and %22 represents a double quote "" and %26 represents an ampersand &.*
 
 g. Write a brief description, probably including a diagram, explaining how this reverse shell is functioning.
+
+> * *I started netcat listener on my macOS that waits for incoming connections on a specified port i.e `nc -l 5050`*
+> * *I then sent the command that uses bash to create a reverse shell through a URL to webshell.php that was uploaded in part 3. The system function in webshell.php helps execute the `bash` command that tells Kali VM to connect back to my macOS (attacker’s machine).*
+> * *The Kali VM hence establishes a connection to my macOS's IP address and port 5050 as specified in the command.*
+> * *I can now interact with shell on Kali VM by executing commands from my macOS*
+>
+> * *Here is a diagram that summarizes my description:*
+> 
+> ![IMG_0176](https://github.com/user-attachments/assets/490f7904-72b8-424f-b234-f52ef2c6c6fb)
+
