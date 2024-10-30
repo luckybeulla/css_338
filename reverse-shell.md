@@ -34,7 +34,9 @@ b. What are the names of all the user accounts on danger.jeffondich.com? How do 
 
 c. Do you have access to the file /etc/passwd? What's in it?
 
-> *I attempted to access ```/etc/passwd``` using ```cat /etc/passwd``` but encountered a site error, suggesting that direct access to the file is restricted.*
+> *I was able to access `/etc/passwd`*
+> 
+> *The file contains information about all the user accounts on danger.jeffondich.com. The present fields include each user account's username, path to the user's home directory and default shell, and more details.*
 
 d. Do you have access to the file /etc/shadow? What's in it? (You'll have to look onliine for the answer to that second question, since the answer to the first is no.)
 
@@ -48,7 +50,7 @@ e. There may be some secret files scattered around. See how many you can find an
 
 f. [Optional] Report on anything else interesting you discover.
 
-> *I was frustrated but eventually found it helpful that the ```cd``` command does not work in web shell.*
+> *I was frustrated but eventually found it helpful that the ```cd``` command does not work in web shell (at least I encountered a site error on my computer).*
 > 
 > *I learned that when I send a command via a PHP web shell, it’s executed in a new, isolated shell session every time. Any directory changes made with cd exist only in that temporary shell, which closes immediately after the command runs. This allows me to explore diffent directories without needing ```cd```.*
 
