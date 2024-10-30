@@ -114,11 +114,13 @@ f. What are all those % codes in the URL you used?
 g. Write a brief description, probably including a diagram, explaining how this reverse shell is functioning.
 
 > * *I started netcat listener on my macOS that waits for incoming connections on a specified port i.e `nc -l 5050`*
-> * *I then sent the command that uses bash to create a reverse shell through a URL to webshell.php that was uploaded in part 3. The system function in webshell.php helps execute the `bash` command that tells Kali VM to connect back to my macOS (attacker’s machine).*
-> * *The Kali VM hence establishes a connection to my macOS's IP address and port 5050 as specified in the command.*
-> * *I can now interact with shell on Kali VM by executing commands from my macOS*
+> * *I then sent an HTTP request to the Apache2 web server on the Kali VM. The URL contains a `bash` command that tells Kali (the target) to connect back to my macOS (the attacker)*
+> * *Apache2 receives this request and forwards it to webshell.php in the same directory `/var/www/html`.*
+> * *The PHP webshell interprets the bash command and executes it. This command initiates a reverse shell connection back to my macOS's IP address and port 5050 as specified in the URL ( i.e connects to attacker’s host machine).*
+> * *My macOS’s listener accepts the connection, and now I, the attacker, have access to the Kali VM shell and can execute commands from my computer.*
 >
-> * *Here is a diagram that summarizes my description:*
+>  *Here is a diagram of my description:*
 > 
-> ![IMG_0176](https://github.com/user-attachments/assets/490f7904-72b8-424f-b234-f52ef2c6c6fb)
+> ![IMG_0177](https://github.com/user-attachments/assets/e3e70d5c-056f-4c0b-9ce4-f1dfb409a5ff)
+
 
