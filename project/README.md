@@ -1,14 +1,27 @@
+***Bryan Yang '24***
+
+***Lucky Beulla Muhoza '26***
+
+***Prof. Jeff Ondich***
+
+***CS338: Computer Security***
+
+# A project: learn something new and share it
+
+### ***Link to website codebase:** https://github.com/luckybeulla/key_sharing_app* 
+
 ## Project Topic: Interactive key sharing visualization web app
 
-**Link to website codebase:** https://github.com/luckybeulla/key_sharing_app
+## Partners: 
 
-### Partners: Bryan, Lucky
+* Bryan
+* Lucky
 
-### Project Description:
+## Project Description:
 
 We want to build a web app that visually demonstrates public key exchange using interactive animations and diagrams. This app will allow users to select values and view a step-by-step breakdown of key sharing processes, specifically Diffie-Hellman. Additionally, the app will illustrate scenarios such as adversary-in-the-middle attacks.
 
-### Project Deliverables:
+## Project Deliverables:
 
 An interactive interface with the following elements:
  - Components representing each participant in the key exchange, such as Alice, Bob, and Mal/Eve.
